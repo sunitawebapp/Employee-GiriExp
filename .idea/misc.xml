@@ -4,6 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/FreelancingAndroidLive/EmployeeGiriExp/app/src/main/res/layout/activity_main.xml" value="0.2109375" />
+        <entry key="..\:/FreelancingAndroidLive/EmployeeGiriExp/app/src/main/res/layout/content_main.xml" value="0.322265625" />
+        <entry key="..\:/FreelancingAndroidLive/EmployeeGiriExp/app/src/main/res/layout/fragment_home.xml" value="0.225" />
+        <entry key="..\:/FreelancingAndroidLive/EmployeeGiriExp/app/src/main/res/layout/fragment_login.xml" value="0.225" />
+        <entry key="..\:/FreelancingAndroidLive/EmployeeGiriExp/app/src/main/res/layout/fragment_splash.xml" value="0.225" />
       </map>
     </option>
   </component>
