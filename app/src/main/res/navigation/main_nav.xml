@@ -9,15 +9,42 @@
         android:id="@+id/splashFragment"
         android:name="com.sunitawebapp.employee_giriexp.ui.fragments.SplashFragment"
         android:label="fragment_splash"
-        tools:layout="@layout/fragment_splash" />
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.sunitawebapp.employee_giriexp.ui.fragments.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_phNoVerifyFragment"
+            app:destination="@id/phNoVerifyFragment" />
+    </fragment>
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.sunitawebapp.employee_giriexp.ui.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/phNoVerifyFragment"
+        android:name="com.sunitawebapp.employee_giriexp.ui.fragments.PhNoVerifyFragment"
+        android:label="fragment_ph_no_verify"
+        tools:layout="@layout/fragment_ph_no_verify" >
+        <action
+            android:id="@+id/action_phNoVerifyFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.sunitawebapp.employee_giriexp.ui.fragments.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" />
+    <fragment
+        android:id="@+id/thankUregisterFragment"
+        android:name="com.sunitawebapp.employee_giriexp.ui.fragments.ThankUregisterFragment"
+        android:label="fragment_thank_uregister"
+        tools:layout="@layout/fragment_thank_uregister" />
 </navigation>
