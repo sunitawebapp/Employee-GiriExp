@@ -41,7 +41,11 @@
         android:id="@+id/registrationFragment"
         android:name="com.sunitawebapp.employee_giriexp.ui.fragments.RegistrationFragment"
         android:label="fragment_registration"
-        tools:layout="@layout/fragment_registration" />
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registrationFragment_to_thankUregisterFragment"
+            app:destination="@id/thankUregisterFragment" />
+    </fragment>
     <fragment
         android:id="@+id/thankUregisterFragment"
         android:name="com.sunitawebapp.employee_giriexp.ui.fragments.ThankUregisterFragment"

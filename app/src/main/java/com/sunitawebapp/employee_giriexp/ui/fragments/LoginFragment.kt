@@ -25,6 +25,7 @@ class LoginFragment : Fragment() ,View.OnClickListener{
         binding= FragmentLoginBinding.inflate(inflater, container, false)
         binding.apply {
             btnLogin.setOnClickListener(this@LoginFragment)
+            tvRegister.setOnClickListener(this@LoginFragment)
             return binding.root
         }
     }
@@ -37,6 +38,9 @@ class LoginFragment : Fragment() ,View.OnClickListener{
         when(view){
             binding.btnLogin->{
                 findNavController().navigate(R.id.homeFragment)
+            }
+            binding.tvRegister->{
+                findNavController().navigate(R.id.registrationFragment)
             }
         }
     }
