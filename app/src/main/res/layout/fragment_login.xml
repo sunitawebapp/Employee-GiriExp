@@ -81,6 +81,8 @@
                 android:id="@+id/tvRegister"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold|italic"
                 android:text="@string/don_t_have_an_account_register"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

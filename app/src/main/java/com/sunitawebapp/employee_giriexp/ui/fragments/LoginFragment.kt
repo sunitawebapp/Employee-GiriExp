@@ -40,7 +40,7 @@ class LoginFragment : Fragment() ,View.OnClickListener{
                 findNavController().navigate(R.id.homeFragment)
             }
             binding.tvRegister->{
-                findNavController().navigate(R.id.registrationFragment)
+                findNavController().navigate(R.id.phNoVerifyFragment)
             }
         }
     }

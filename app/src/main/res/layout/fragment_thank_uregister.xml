@@ -20,22 +20,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Thanks for\nRegistration"
+        android:textStyle="bold"
         android:textColor="@color/white"
-        android:textSize="@dimen/_20sdp"
+        android:textSize="@dimen/_30sdp"
         android:layout_marginStart="@dimen/_30sdp"
         android:layout_marginTop="@dimen/_40sdp"
         app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
         android:id="@+id/smsbtn"
-        android:layout_width="@dimen/_100sdp"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_80sdp"
         android:src="@drawable/sms_alert_icon"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginEnd="@dimen/_15sdp"
         android:backgroundTint="@color/white"
         android:foregroundTint="@color/white"
         android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_30sdp"
         app:layout_constraintTop_toBottomOf="@id/tv"
         app:layout_constraintEnd_toEndOf="parent"/>
     <TextView
@@ -46,8 +48,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:textColor="@color/Red"
-        android:textSize="@dimen/_20sdp"
-        android:textStyle="italic"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="italic|bold"
         android:layout_marginTop="@dimen/_20sdp"/>
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnExit"

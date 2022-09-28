@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/FreelancingAndroidLive/Employee-GiriExp/app/src/main/res/layout/fragment_home.xml" value="0.225" />
+        <entry key="..\:/FreelancingAndroidLive/Employee-GiriExp/app/src/main/res/layout/fragment_login.xml" value="0.1814814814814815" />
+        <entry key="..\:/FreelancingAndroidLive/Employee-GiriExp/app/src/main/res/layout/fragment_ph_no_verify.xml" value="0.225" />
+        <entry key="..\:/FreelancingAndroidLive/Employee-GiriExp/app/src/main/res/layout/fragment_registration.xml" value="0.225" />
+        <entry key="..\:/FreelancingAndroidLive/Employee-GiriExp/app/src/main/res/layout/fragment_thank_uregister.xml" value="0.225" />
         <entry key="..\:/FreelancingAndroidLive/EmployeeGiriExp/app/src/main/res/layout/activity_main.xml" value="0.2109375" />
         <entry key="..\:/FreelancingAndroidLive/EmployeeGiriExp/app/src/main/res/layout/content_main.xml" value="0.322265625" />
         <entry key="..\:/FreelancingAndroidLive/EmployeeGiriExp/app/src/main/res/layout/fragment_home.xml" value="0.225" />
