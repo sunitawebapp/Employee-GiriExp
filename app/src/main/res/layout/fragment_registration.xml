@@ -65,6 +65,7 @@
             android:hint="Mobile Number"
             android:inputType="phone"
             android:maxLength="10"
+            android:enabled="false"
             android:paddingStart="@dimen/_10sdp"/>
 
         <EditText
@@ -81,19 +82,34 @@
             android:maxLength="10"
             android:drawableLeft="@drawable/password_icon"
             android:paddingStart="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/tvDOB"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/black_border_bg"
+            app:layout_constraintTop_toBottomOf="@+id/etnPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            android:hint="choose DOB"
+            android:gravity="center|left"
+            android:textSize="@dimen/_12sdp"
+            android:maxLength="10"
+            android:drawableLeft="@drawable/calendar_icon"
+            android:paddingStart="@dimen/_10sdp"/>
         <ImageView
             android:id="@+id/imgStation"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_35sdp"
             android:background="@drawable/black_border_bg"
-            app:layout_constraintTop_toBottomOf="@+id/etnPassword"
+            app:layout_constraintTop_toBottomOf="@+id/tvDOB"
             android:layout_marginTop="@dimen/_10sdp"
             />
         <Spinner
             android:id="@+id/spinStation"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_35sdp"
-            app:layout_constraintTop_toBottomOf="@+id/etnPassword"
+            app:layout_constraintTop_toBottomOf="@+id/tvDOB"
             android:layout_marginTop="@dimen/_10sdp"
            />
         <androidx.appcompat.widget.AppCompatButton

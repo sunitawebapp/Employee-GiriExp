@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="AttendanceReportRes"
+            type="com.sunitawebapp.employee_giriexp.retrofit.model.response.AttendanceReportResItem" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_40sdp">
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="@{AttendanceReportRes.attendanceDate}"
+        android:textColor="#8E8585"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="@{AttendanceReportRes.inTime}"
+        android:textColor="@color/grey"
+
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="@{AttendanceReportRes.outTime}"
+        android:textColor="@color/grey"
+        android:gravity="center"
+        android:hint="-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

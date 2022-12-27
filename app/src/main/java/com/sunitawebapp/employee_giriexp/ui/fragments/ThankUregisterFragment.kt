@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import androidx.navigation.fragment.findNavController
 import com.sunitawebapp.employee_giriexp.R
 
 // TODO: Rename parameter arguments, choose names that match
@@ -18,6 +20,7 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  */
 class ThankUregisterFragment : Fragment() {
+   lateinit var btnExit : Button
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -36,6 +39,14 @@ class ThankUregisterFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_thank_uregister, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        btnExit=view.findViewById(R.id.btnExit)
+        btnExit.setOnClickListener {
+            findNavController().navigate(R.id.loginFragment)
+        }
+        super.onViewCreated(view, savedInstanceState)
     }
 
     companion object {

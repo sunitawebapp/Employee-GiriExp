@@ -1,10 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.fragments.HomeFragment">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imgLogin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/background_carv"/>
 
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_96sdp"
+            android:layout_height="@dimen/_96sdp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:src="@drawable/deliverylogonew"
+            app:civ_border_width="@dimen/_10sdp"
+            app:civ_border_color="#F8FBFD"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imgLogin"
+            app:layout_constraintBottom_toBottomOf="@id/imgLogin"/>
 
-</FrameLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCheckIn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="CHECK IN"
+            app:layout_constraintTop_toBottomOf="@id/imgLogin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnCheckOut"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@drawable/border_bg"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCheckOut"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="CHECK OUT"
+            app:layout_constraintTop_toBottomOf="@id/imgLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnCheckIn"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:background="@drawable/border_bg"/>
+
+        <ImageView
+            android:id="@+id/imgcheckin"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/checkinout_icon"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="@id/btnCheckIn"
+            app:layout_constraintTop_toBottomOf="@+id/btnCheckIn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check in Time"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintTop_toTopOf="@+id/imgcheckin"
+            app:layout_constraintBottom_toBottomOf="@+id/imgcheckin"
+            app:layout_constraintStart_toEndOf="@+id/imgcheckin"/>
+        <TextView
+            android:id="@+id/tvcheckIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00 AM"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintTop_toBottomOf="@+id/imgcheckin"
+            app:layout_constraintStart_toEndOf="@+id/imgcheckin"/>
+
+        <ImageView
+            android:id="@+id/imgcheckout"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/checkinout_icon"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="@id/btnCheckOut"
+            app:layout_constraintTop_toBottomOf="@+id/btnCheckOut"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check out Time"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintTop_toTopOf="@+id/imgcheckout"
+            app:layout_constraintBottom_toBottomOf="@+id/imgcheckout"
+            app:layout_constraintStart_toEndOf="@+id/imgcheckout"/>
+
+        <TextView
+            android:id="@+id/tvcheckout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00 PM"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintTop_toBottomOf="@+id/imgcheckout"
+            app:layout_constraintStart_toEndOf="@+id/imgcheckout"/>
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            tools:context=".ui.fragments.CurrentLocationFragment"
+            app:layout_constraintTop_toBottomOf="@id/tvcheckout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

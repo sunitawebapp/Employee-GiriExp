@@ -10,11 +10,13 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import com.sunitawebapp.employee_giriexp.R
 import com.sunitawebapp.employee_giriexp.databinding.FragmentRegistrationBinding
-import com.sunitawebapp.employee_giriexp.retrofit.Models.Request.RegistrationReq
-import com.sunitawebapp.employee_giriexp.retrofit.Models.Response.StationListResItem
+import com.sunitawebapp.employee_giriexp.retrofit.model.Request.RegistrationReq
+import com.sunitawebapp.employee_giriexp.retrofit.model.response.StationListResItem
 import com.sunitawebapp.employee_giriexp.retrofit.Resource
+import com.sunitawebapp.employee_giriexp.utils.MethodClass
 import com.sunitawebapp.employee_giriexp.utils.MyDialog
 import com.sunitawebapp.employee_giriexp.viewmodels.RegistrationViewModel
 import com.sunitawebapp.employee_giriexp.viewmodels.StationListViewModel
@@ -29,6 +31,8 @@ val registrationViewModel : RegistrationViewModel by viewModels()
      var stationListResItem : ArrayList<String> = ArrayList()
     var tblmastcodecity_id =0
     var manager_tblsysuserlogin_id =0
+    var dob : String =""
+    val registrationFragmentArgs : RegistrationFragmentArgs by navArgs()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -44,11 +48,14 @@ val registrationViewModel : RegistrationViewModel by viewModels()
         binding.apply {
             btnRegister.setOnClickListener(this@RegistrationFragment)
             spinStation.onItemSelectedListener = this@RegistrationFragment
+            tvDOB.setOnClickListener(this@RegistrationFragment)
         }
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
+     binding.etnMobNo.setText(registrationFragmentArgs.mobile)
         stationListViewModel.StationList()
         stationListViewModel.StationListLivedata.observe(viewLifecycleOwner){
             stationListResItem.add("Select Station")
@@ -106,7 +113,9 @@ val registrationViewModel : RegistrationViewModel by viewModels()
                     binding.etnMobNo.setError("Enter your Mobile Number")
                 }else if(binding.etnPassword.text.length==0){
                     binding.etnPassword.setError("Enter your Password")
-                }else if(cityCode.isEmpty()){
+                }else if(binding.tvDOB.text.toString().equals("")){
+                    Toast.makeText(requireContext(),"Select DOB", Toast.LENGTH_SHORT).show()
+                }else if(cityCode.equals("0")){
                     Toast.makeText(requireContext(),"Select City", Toast.LENGTH_SHORT).show()
                 }else {
 
@@ -117,18 +126,23 @@ val registrationViewModel : RegistrationViewModel by viewModels()
                             manager_tblsysuserlogin_id = manager_tblsysuserlogin_id,
                             mobile = binding.etnMobNo.text.toString(),
                             password = binding.etnPassword.text.toString(),
-                            tblmastcodecity_id = tblmastcodecity_id,
+                            dob=dob,
+                            tblmastcodecity_id = cityCode.toInt(),
                             tblmastusertype_id = 3
                         )
                     )
                 }
             }
 
+            binding.tvDOB->{
+            dob=   MethodClass.openCalenderDialog(requireContext(),  binding.tvDOB)
+            }
+
             }
         }
 
     override fun onItemSelected(p0: AdapterView<*>?, p1: View?, pos: Int, p3: Long) {
-         tblmastcodecity_id=stationList[pos].tblmastcodecity_id
+        cityCode=stationList[pos].tblmastcodecity_id.toString()
          manager_tblsysuserlogin_id=stationList.get(pos).manager_tblsysuserlogin_id
     }
 

@@ -3,7 +3,7 @@ package com.sunitawebapp.employee_giriexp.viewmodels
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.sunitawebapp.admin_giriexp.retrofit.repository.Repository
-import com.sunitawebapp.employee_giriexp.retrofit.Models.Response.StationListRes
+import com.sunitawebapp.employee_giriexp.retrofit.model.response.StationListRes
 import com.sunitawebapp.employee_giriexp.retrofit.Resource
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch

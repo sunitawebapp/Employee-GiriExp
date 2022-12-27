@@ -14,7 +14,7 @@
         android:background="@color/logo_color">
 
   <ImageView
-      android:id="@+id/menu_btn"
+      android:id="@+id/menubtn"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:src="@drawable/menu_icon"
@@ -33,7 +33,7 @@
             android:textSize="@dimen/_15sdp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/menu_btn"/>
+            app:layout_constraintStart_toEndOf="@id/menubtn"/>
         <ImageView
             android:id="@+id/smsbtn"
             android:layout_width="@dimen/_40sdp"

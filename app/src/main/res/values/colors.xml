@@ -10,4 +10,8 @@
 
     <color name="logo_color">#015C99</color>
     <color name="Red">#C72C2F</color>
+    <color name="light_sky">#9EA2D4F6</color>
+    <color name="green">#43A047</color>
+    <color name="lightred">#E91F26</color>
+    <color name="grey">#AEAAAA</color>
 </resources>

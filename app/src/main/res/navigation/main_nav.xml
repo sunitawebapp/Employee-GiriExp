@@ -36,6 +36,8 @@
         <action
             android:id="@+id/action_phNoVerifyFragment_to_registrationFragment"
             app:destination="@id/registrationFragment" />
+
+
     </fragment>
     <fragment
         android:id="@+id/registrationFragment"
@@ -45,10 +47,40 @@
         <action
             android:id="@+id/action_registrationFragment_to_thankUregisterFragment"
             app:destination="@id/thankUregisterFragment" />
+
+        <argument
+            android:name="mobile"
+            app:argType="string"
+            android:defaultValue=""
+            />
     </fragment>
     <fragment
         android:id="@+id/thankUregisterFragment"
         android:name="com.sunitawebapp.employee_giriexp.ui.fragments.ThankUregisterFragment"
         android:label="fragment_thank_uregister"
         tools:layout="@layout/fragment_thank_uregister" />
+    <fragment
+        android:id="@+id/versionAvailableFragment"
+        android:name="com.sunitawebapp.employee_giriexp.ui.fragments.versionAvailableFragment"
+        android:label="versionAvailableFragment" />
+    <fragment
+        android:id="@+id/currentLocationFragment"
+        android:name="com.sunitawebapp.employee_giriexp.ui.fragments.CurrentLocationFragment"
+        android:label="fragment_current_location"
+        tools:layout="@layout/fragment_current_location" />
+    <fragment
+        android:id="@+id/attendanceFragment"
+        android:name="com.sunitawebapp.employee_giriexp.ui.fragments.AttendanceFragment"
+        android:label="fragment_attendance"
+        tools:layout="@layout/fragment_attendance" />
+    <fragment
+        android:id="@+id/myLeavesListFragment"
+        android:name="com.sunitawebapp.employee_giriexp.ui.fragments.MyLeavesListFragment"
+        android:label="fragment_my_leaves_list"
+        tools:layout="@layout/fragment_my_leaves_list" />
+    <fragment
+        android:id="@+id/applyLeaveFragment"
+        android:name="com.sunitawebapp.employee_giriexp.ui.fragments.ApplyLeaveFragment"
+        android:label="fragment_apply_leave"
+        tools:layout="@layout/fragment_apply_leave" />
 </navigation>

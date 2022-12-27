@@ -3,11 +3,29 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/FreelancingAndroidLive/Employee-GiriExp/app/src/main/res/drawable/attendence_icon.xml" value="0.1045" />
+        <entry key="..\:/FreelancingAndroidLive/Employee-GiriExp/app/src/main/res/drawable/border_bg.xml" value="0.136" />
+        <entry key="..\:/FreelancingAndroidLive/Employee-GiriExp/app/src/main/res/drawable/drawer_bg.xml" value="0.136" />
+        <entry key="..\:/FreelancingAndroidLive/Employee-GiriExp/app/src/main/res/drawable/location_icon.xml" value="0.136" />
+        <entry key="..\:/FreelancingAndroidLive/Employee-GiriExp/app/src/main/res/layout/activity_main.xml" value="0.20925925925925926" />
+        <entry key="..\:/FreelancingAndroidLive/Employee-GiriExp/app/src/main/res/layout/content_main.xml" value="0.2203125" />
+        <entry key="..\:/FreelancingAndroidLive/Employee-GiriExp/app/src/main/res/layout/custom_loading.xml" value="0.2203125" />
+        <entry key="..\:/FreelancingAndroidLive/Employee-GiriExp/app/src/main/res/layout/drawer_layout.xml" value="0.25" />
+        <entry key="..\:/FreelancingAndroidLive/Employee-GiriExp/app/src/main/res/layout/fragment_apply_leave.xml" value="0.2" />
+        <entry key="..\:/FreelancingAndroidLive/Employee-GiriExp/app/src/main/res/layout/fragment_attendance.xml" value="0.1" />
+        <entry key="..\:/FreelancingAndroidLive/Employee-GiriExp/app/src/main/res/layout/fragment_current_location.xml" value="0.22" />
         <entry key="..\:/FreelancingAndroidLive/Employee-GiriExp/app/src/main/res/layout/fragment_home.xml" value="0.225" />
         <entry key="..\:/FreelancingAndroidLive/Employee-GiriExp/app/src/main/res/layout/fragment_login.xml" value="0.1814814814814815" />
+        <entry key="..\:/FreelancingAndroidLive/Employee-GiriExp/app/src/main/res/layout/fragment_my_leaves_list.xml" value="0.2203125" />
         <entry key="..\:/FreelancingAndroidLive/Employee-GiriExp/app/src/main/res/layout/fragment_ph_no_verify.xml" value="0.225" />
         <entry key="..\:/FreelancingAndroidLive/Employee-GiriExp/app/src/main/res/layout/fragment_registration.xml" value="0.225" />
+        <entry key="..\:/FreelancingAndroidLive/Employee-GiriExp/app/src/main/res/layout/fragment_splash.xml" value="0.22" />
         <entry key="..\:/FreelancingAndroidLive/Employee-GiriExp/app/src/main/res/layout/fragment_thank_uregister.xml" value="0.225" />
+        <entry key="..\:/FreelancingAndroidLive/Employee-GiriExp/app/src/main/res/layout/fragment_version_available.xml" value="0.2203125" />
+        <entry key="..\:/FreelancingAndroidLive/Employee-GiriExp/app/src/main/res/layout/item_attendence_list.xml" value="0.2203125" />
+        <entry key="..\:/FreelancingAndroidLive/Employee-GiriExp/app/src/main/res/layout/item_leave_list.xml" value="0.1" />
+        <entry key="..\:/FreelancingAndroidLive/Employee-GiriExp/app/src/main/res/layout/notavailable_internet_dialog.xml" value="0.17685185185185184" />
+        <entry key="..\:/FreelancingAndroidLive/Employee-GiriExp/app/src/main/res/layout/sub_content_main.xml" value="0.2203125" />
         <entry key="..\:/FreelancingAndroidLive/EmployeeGiriExp/app/src/main/res/layout/activity_main.xml" value="0.2109375" />
         <entry key="..\:/FreelancingAndroidLive/EmployeeGiriExp/app/src/main/res/layout/content_main.xml" value="0.322265625" />
         <entry key="..\:/FreelancingAndroidLive/EmployeeGiriExp/app/src/main/res/layout/fragment_home.xml" value="0.225" />

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "172953116481",
+    "project_id": "employeegiriexp",
+    "storage_bucket": "employeegiriexp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:172953116481:android:0455673e5ca77079bb0bc0",
+        "android_client_info": {
+          "package_name": "com.sunitawebapp.employee_giriexp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "172953116481-226e83v9o5c3a2fg3rkj9km6psp6ef50.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sunitawebapp.employee_giriexp",
+            "certificate_hash": "261c7fbc43c994444abd6168a75fec34a7ae33c1"
+          }
+        },
+        {
+          "client_id": "172953116481-5o4ruj0m8u8u9n39rvhacg8i4ru09gf3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEq1Yh8nrrEhcsw0raqPEWLnfE3zlYdiE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "172953116481-5o4ruj0m8u8u9n39rvhacg8i4ru09gf3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

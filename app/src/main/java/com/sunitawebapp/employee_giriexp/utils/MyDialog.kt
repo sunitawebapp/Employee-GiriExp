@@ -1,5 +1,6 @@
 package com.sunitawebapp.employee_giriexp.utils
 
+import android.app.Activity
 import android.app.Dialog
 import android.content.Context
 import android.graphics.Color
@@ -7,7 +8,9 @@ import android.graphics.drawable.ColorDrawable
 import android.view.LayoutInflater
 import android.view.Window
 import android.view.WindowManager
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.sunitawebapp.employee_giriexp.R
+import com.sunitawebapp.employee_giriexp.callbacks.OnDialogButtonClickListener
 
 
 object MyDialog {
@@ -35,5 +38,28 @@ object MyDialog {
 
     fun stopLoading(){
         dialog.dismiss()
+    }
+
+    fun showConfirmation(
+        title: String,
+        msg: String,
+        activity: Activity,
+        whatFor: String,
+        onDialogButtonClickListener: OnDialogButtonClickListener
+    ) {
+        activity.let {
+            MaterialAlertDialogBuilder(it)
+                .setTitle(title)
+                .setMessage(msg)
+                .setCancelable(false)
+                .setPositiveButton("Yes") { dialog, which ->
+                    dialog.dismiss()
+                    onDialogButtonClickListener.onPositiveButtonClicked(whatFor)
+                }.setNegativeButton("No") { dialog, which ->
+                    dialog.dismiss()
+                    onDialogButtonClickListener.onNegativeButtonClicked(whatFor)
+                }
+                .show()
+        }
     }
 }
